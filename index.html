@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -177,23 +178,14 @@
       overflow-x: auto;
     }
 
-    .analysis-box {
-      margin-top: 14px;
-      padding: 14px 18px;
-      background: #F8FAFC;
-      border: 1px solid #E2E8F0;
-      border-radius: 8px;
+    .question {
+      margin-top: 18px;
+      padding: 14px 16px;
+      background: #F1F5F9;
+      border-left: 3px solid var(--accent);
+      border-radius: 4px;
       color: #334155;
-      font-size: 0.91rem;
-      line-height: 1.6;
-    }
-
-    .analysis-box h4 {
-      margin: 0 0 6px;
-      color: #1E293B;
-      font-size: 0.95rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+      font-size: 0.94rem;
     }
 
     .transition {
@@ -493,213 +485,110 @@
       id: "chart-01",
       title: "The rise of online retail",
       path: "charts/01_abs_online_trend.vg.json",
-      story: "This chart establishes the overall direction of online retail turnover. Look for long-term growth, periods of acceleration or decline, and any unusual changes. Use the plotted values to determine which patterns are actually present.",
-      analysis: "The time-series trend line highlights a sustained upward trajectory in Australian online retail sales over the decade. Noticeable steep accelerations correspond with major shifts in consumer habits and lockdowns, demonstrating structural market growth rather than short-term spikes."
+      story: "This chart establishes the overall direction of online retail turnover. Look for long-term growth, periods of acceleration or decline, and any unusual changes. Use the plotted values to determine which patterns are actually present."
     },
     {
       id: "chart-02",
       title: "Food and non-food sales",
       path: "charts/02_food_nonfood_area.vg.json",
-      story: "Comparing food and non-food turnover helps show whether these categories contribute differently to the retail picture. Examine their relative scale and how each category changes across the displayed period.",
-      analysis: "The stacked area representation demonstrates that non-food retail commands the lion's share of digital turnover. However, online grocery and food delivery have experienced steady compounding growth, reflecting broader adoption of digital platforms for essential household needs."
+      story: "Comparing food and non-food turnover helps show whether these categories contribute differently to the retail picture. Examine their relative scale and how each category changes across the displayed period."
     },
     {
       id: "chart-03",
       title: "Original versus seasonally adjusted turnover",
       path: "charts/03_original_vs_adjusted.vg.json",
-      story: "Retail activity can fluctuate with recurring seasonal events. Compare the original and seasonally adjusted series to see how seasonal adjustment changes the appearance of the underlying trend.",
-      analysis: "By filtering out predictable end-of-year retail surges (such as Black Friday and Christmas spending), the seasonally adjusted line reveals the true underlying economic momentum, smoothing out sharp monthly volatility seen in the raw data."
+      story: "Retail activity can fluctuate with recurring seasonal events. Compare the original and seasonally adjusted series to see how seasonal adjustment changes the appearance of the underlying trend."
     },
     {
       id: "chart-04",
       title: "Seasonality",
       path: "charts/04_seasonality_heatmap.vg.json",
-      story: "A heatmap can make recurring monthly patterns easier to identify. Look for months that repeatedly show relatively high or low turnover and check whether the pattern is consistent across years.",
-      analysis: "The heatmap visual matrix underscores November as the undisputed peak month for online spending across multiple years, heavily driven by pre-Christmas promotional events, whereas January and February typically see post-holiday spending contractions."
+      story: "A heatmap can make recurring monthly patterns easier to identify. Look for months that repeatedly show relatively high or low turnover and check whether the pattern is consistent across years."
     },
     {
       id: "chart-05",
       title: "Category trajectories",
       path: "charts/05_food_nonfood_small_multiples.vg.json",
-      story: "Small multiples allow each category's trajectory to be examined separately. Look for turning points, periods of rapid change and differences in the timing of category movements.",
-      analysis: "Breaking down retail sectors into small multiples reveals distinct divergence: discretionary goods experience high volatility tied to economic confidence, while household consumables maintain a stable, resilient upward slope."
+      story: "Small multiples allow each category's trajectory to be examined separately. Look for turning points, periods of rapid change and differences in the timing of category movements."
     },
     {
       id: "chart-06",
       title: "Category comparison",
       path: "charts/06_category_share_slopegraph.vg.json",
-      story: "This comparison focuses on the relationship between categories at selected points in time. Check whether their relative positions change and how large those changes appear.",
-      analysis: "The slopegraph maps how relative market shares shifted between sectors over time, emphasizing that while absolute volume grew across the board, category dominance remained remarkably consistent."
+      story: "This comparison focuses on the relationship between categories at selected points in time. Check whether their relative positions change and how large those changes appear."
     },
     {
       id: "chart-07",
       title: "Monthly change",
       path: "charts/07_monthly_change_bar.vg.json",
-      story: "Month-to-month changes highlight short-term movements that can be hidden in a long-term trend. Compare positive and negative changes, paying attention to the scale and any unusually large movements.",
-      analysis: "The diverging bar chart emphasizes the volatility of retail growth rates. Large positive swings in late-year months contrast sharply with corrective retractions in the opening months of the calendar year."
+      story: "Month-to-month changes highlight short-term movements that can be hidden in a long-term trend. Compare positive and negative changes, paying attention to the scale and any unusually large movements."
     },
     {
       id: "chart-08",
       title: "Online shopping participation",
       path: "charts/08_acma_online_shopping_trend.vg.json",
-      story: "Survey responses provide a people-centred perspective on online shopping. Examine the reported level of participation and how it varies across the years or groups included in the data.",
-      analysis: "Survey metrics indicate that digital retail participation has crossed into a mature baseline where the vast majority of digitally connected adults regularly complete transactions online."
+      story: "Survey responses provide a people-centred perspective on online shopping. Examine the reported level of participation and how it varies across the years or groups included in the data."
     },
     {
       id: "chart-09",
       title: "Other online activities",
       path: "charts/09_acma_activities_2025.vg.json",
-      story: "Online shopping takes place within a wider range of digital activities. Compare the activities shown to understand how shopping sits alongside other reported uses of the internet.",
-      analysis: "When benchmarked against messaging, search, and video streaming, online shopping occupies a central core position, proving that e-commerce is integrated into everyday digital routines."
+      story: "Online shopping takes place within a wider range of digital activities. Compare the activities shown to understand how shopping sits alongside other reported uses of the internet."
     },
     {
       id: "chart-10",
       title: "Online activity trends",
       path: "charts/10_acma_activities_trend.vg.json",
-      story: "Following activities across time can reveal whether reported behaviours remain stable or change. Look for activities that move in similar directions and those that follow different patterns.",
-      analysis: "Longitudinal survey tracking shows that foundational activities like online banking and shopping have plateaued at high saturation levels, while utility-based and entertainment streaming services experience gradual incremental gains."
+      story: "Following activities across time can reveal whether reported behaviours remain stable or change. Look for activities that move in similar directions and those that follow different patterns."
     },
     {
       id: "chart-11",
       title: "Shopping by age",
       path: "charts/11_acma_age_dotplot.vg.json",
-      story: "Age-group comparisons help reveal whether reported online shopping differs across the groups measured. Identify the highest and lowest values, then consider the size of the gaps rather than relying on rank alone.",
-      analysis: "The dot plot illustrates high e-commerce participation among prime working-age cohorts, while also highlighting narrow generational gaps as older Australians increasingly adopt digital purchasing tools."
+      story: "Age-group comparisons help reveal whether reported online shopping differs across the groups measured. Identify the highest and lowest values, then consider the size of the gaps rather than relying on rank alone."
     },
     {
       id: "chart-12",
       title: "Shopping by gender",
       path: "charts/12_acma_gender_bar.vg.json",
-      story: "This chart compares the reported measure across the gender categories available in the survey. Examine the direction and magnitude of any differences without assuming that gender alone explains the behaviour.",
-      analysis: "Gender-based breakdown reveals minimal variance in overall online shopping participation rates, showing that digital retail accessibility spans broad demographic segments uniformly."
+      story: "This chart compares the reported measure across the gender categories available in the survey. Examine the direction and magnitude of any differences without assuming that gender alone explains the behaviour."
     },
     {
       id: "chart-13",
       title: "Median age across capitals",
       path: "charts/13_capital_median_age.vg.json",
-      story: "Capital-city median age provides demographic context for the cities included in the dataset. Compare the values and range, but do not interpret age differences as evidence of different online shopping rates.",
-      analysis: "Adelaide and Hobart record slightly higher median ages compared to resource-driven or fast-growing capitals like Darwin and Canberra, establishing crucial baseline demographic context across state and territory hubs."
+      story: "Capital-city median age provides demographic context for the cities included in the dataset. Compare the values and range, but do not interpret age differences as evidence of different online shopping rates."
     },
     {
       id: "chart-14",
       title: "Sex ratio across capitals",
       path: "charts/14_capital_sex_ratio.vg.json",
-      story: "Sex ratio describes the demographic composition represented by the measure and definition used in the source. Compare the cities while keeping in mind that this statistic does not directly measure consumer behaviour.",
-      analysis: "Darwin exhibits a higher male-to-female ratio relative to southern capitals, reflecting specific regional workforce demographics and transient industrial populations."
+      story: "Sex ratio describes the demographic composition represented by the measure and definition used in the source. Compare the cities while keeping in mind that this statistic does not directly measure consumer behaviour."
     },
     {
       id: "chart-15",
-      title: "Capital-city demographics (Bivariate Map)",
-      story: "A bivariate view places two demographic measures together over Australian states and territories[cite: 1]. Point color represents Median Age (using an orange scheme), and point size represents Sex Ratio.",
-      spec: {
-        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-        "title": {
-          "text": "Capital-city demographic context",
-          "subtitle": "Point color = Median Age; Point size = Sex Ratio"
-        },
-        "width": 600,
-        "height": 400,
-        "projection": {
-          "type": "mercator",
-          "center": [134, -27],
-          "scale": 600
-        },
-        "layer": [
-          {
-            "data": {
-              "url": "../data/australian_map.geojson"
-            },
-            "mark": {
-              "type": "geoshape",
-              "fill": "#f8f9fa",
-              "stroke": "#cccccc",
-              "strokeWidth": 1
-            },
-            "encoding": {
-              "tooltip": [
-                {
-                  "field": "properties.shapeName",
-                  "type": "nominal",
-                  "title": "State / Territory"
-                }
-              ]
-            }
-          },
-          {
-            "data": {
-              "values": [
-                {"Capital city": "Sydney", "Median age (years)": 37.1, "Sex ratio": 98.8, "longitude": 151.2093, "latitude": -33.8688},
-                {"Capital city": "Melbourne", "Median age (years)": 36.8, "Sex ratio": 97.8, "longitude": 144.9631, "latitude": -37.8136},
-                {"Capital city": "Brisbane", "Median age (years)": 36.5, "Sex ratio": 98.2, "longitude": 153.0251, "latitude": -27.4698},
-                {"Capital city": "Adelaide", "Median age (years)": 39.3, "Sex ratio": 95.9, "longitude": 138.6007, "latitude": -34.9285},
-                {"Capital city": "Perth", "Median age (years)": 37.6, "Sex ratio": 99.0, "longitude": 115.8605, "latitude": -31.9505},
-                {"Capital city": "Hobart", "Median age (years)": 38.6, "Sex ratio": 95.8, "longitude": 147.3272, "latitude": -42.8821},
-                {"Capital city": "Darwin", "Median age (years)": 34.5, "Sex ratio": 106.8, "longitude": 130.8456, "latitude": -12.4634},
-                {"Capital city": "Canberra", "Median age (years)": 35.4, "Sex ratio": 97.5, "longitude": 149.13, "latitude": -35.2809}
-              ]
-            },
-            "mark": {
-              "type": "circle",
-              "stroke": "#444444",
-              "strokeWidth": 1,
-              "opacity": 0.85
-            },
-            "encoding": {
-              "longitude": {
-                "field": "longitude",
-                "type": "quantitative"
-              },
-              "latitude": {
-                "field": "latitude",
-                "type": "quantitative"
-              },
-              "color": {
-                "field": "Median age (years)",
-                "type": "quantitative",
-                "scale": {"scheme": "oranges"},
-                "title": "Median Age (Years)"
-              },
-              "size": {
-                "field": "Sex ratio",
-                "type": "quantitative",
-                "scale": {"range": [60, 400]},
-                "title": "Sex Ratio"
-              },
-              "tooltip": [
-                {"field": "Capital city", "type": "nominal", "title": "Capital City"},
-                {"field": "Median age (years)", "type": "quantitative", "title": "Median Age", "format": ".1f"},
-                {"field": "Sex ratio", "type": "quantitative", "title": "Sex Ratio", "format": ".1f"}
-              ]
-            }
-          }
-        ],
-        "config": {
-          "view": {
-            "stroke": null
-          }
-        }
-      },
-      analysis: "This bivariate map overlays capital-city demographic points onto state boundaries[cite: 1]. Adelaide stands out with a deeper orange hue indicating a higher median age, whereas Darwin features a larger marker symbol corresponding to its higher sex ratio."
+      title: "Capital-city demographics",
+      path: "charts/15_capital_bivariate.vg.json",
+      story: "A bivariate view places two demographic measures together. Look for clusters, outliers or possible associations, while remembering that a relationship between two city-level measures does not establish causation."
     },
     {
       id: "chart-16",
       title: "Metro and regional comparison",
       path: "charts/16_acma_metro_regional.vg.json",
-      story: "This comparison examines differences between metropolitan and regional responses where those categories are available. Check whether the differences are substantial and whether the survey definitions support a direct comparison.",
-      analysis: "Regional comparisons reveal close alignment in everyday digital adoption between capital cities and regional hubs, though slight variations exist in specialized online service usage due to digital infrastructure availability."
+      story: "This comparison examines differences between metropolitan and regional responses where those categories are available. Check whether the differences are substantial and whether the survey definitions support a direct comparison."
     },
     {
       id: "chart-17",
       title: "2017 versus 2025",
       path: "charts/17_acma_2017_2025_comparison.vg.json",
-      story: "Comparing 2017 and 2025 can highlight changes between the two survey periods. Before interpreting a difference as a real shift in behaviour, consider whether the questions, response options and surveyed populations are comparable.",
-      analysis: "Long-term survey comparisons across an 8-year span illustrate a profound generational shift, with digital commerce evolving from an alternative option to the mainstream default channel for Australian consumers."
+      story: "Comparing 2017 and 2025 can highlight changes between the two survey periods. Before interpreting a difference as a real shift in behaviour, consider whether the questions, response options and surveyed populations are comparable."
     }
   ];
 
+  const root = document.getElementById("charts");
+
   for (const chart of charts) {
     const container = document.getElementById(chart.id);
-    if (!container) continue;
 
     const title = document.createElement("h3");
     title.className = "chart-title";
@@ -712,26 +601,25 @@
     const chartDiv = document.createElement("div");
     chartDiv.className = "chart";
 
-    const analysisBox = document.createElement("div");
-    analysisBox.className = "analysis-box";
-    analysisBox.innerHTML = "<h4>Graph Analysis & Insights</h4><p>" + chart.analysis + "</p>";
+    const question = document.createElement("div");
+    question.className = "question";
+    question.innerHTML = "<strong>Explore:</strong> Use the chart to identify a specific pattern and support your interpretation with the values shown.";
 
-    container.append(title, story, chartDiv, analysisBox);
+    container.append(title, story, chartDiv, question);
 
-    const chartSource = chart.spec ? chart.spec : chart.path;
-
-    vegaEmbed(chartDiv, chartSource, {
+    vegaEmbed(chartDiv, chart.path, {
       actions: false,
       renderer: "canvas"
     }).catch(err => {
       chartDiv.classList.add("error");
       chartDiv.textContent =
-        "Chart could not load: " + (chart.path || "inline specification") +
+        "Chart could not load: " + chart.path +
         "\n" + err.message;
-      console.error("Chart loading error:", chart.id, err);
+      console.error("Chart loading error:", chart.path, err);
     });
   }
 </script>
 
 </body>
 </html>
+```
